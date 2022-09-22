@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataStoreActivity">
+    tools:context=".SharedPreferencesActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayout_dataStore_key"
+        android:id="@+id/inputLayout_sharedPreferences_key"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/inputLayout_dataStore_value"
+        app:layout_constraintBottom_toTopOf="@id/inputLayout_sharedPreferences_value"
         android:hint="@string/key"
         >
 
@@ -26,14 +26,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayout_dataStore_value"
+        android:id="@+id/inputLayout_sharedPreferences_value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_dataStore_key"
-        app:layout_constraintBottom_toTopOf="@id/button_dataStore_saveData"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout_sharedPreferences_key"
+        app:layout_constraintBottom_toTopOf="@id/button_sharedPreferences_saveData"
         android:hint="@string/value"
         >
 
@@ -45,19 +45,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button_dataStore_saveData"
+        android:id="@+id/button_sharedPreferences_saveData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         android:text="@string/save_value"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_dataStore_value"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_dataStore"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout_sharedPreferences_value"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_sharedPreferences"
         />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_dataStore"
+        android:id="@+id/guideline_sharedPreferences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -65,14 +65,14 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputLayout_dataStore_searchKey"
+        android:id="@+id/inputLayout_sharedPreferences_searchKey"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_dataStore"
-        app:layout_constraintBottom_toTopOf="@id/button_dataStore_getData"
+        app:layout_constraintTop_toBottomOf="@id/guideline_sharedPreferences"
+        app:layout_constraintBottom_toTopOf="@id/button_sharedPreferences_getData"
         android:hint="@string/key"
         >
 
@@ -84,26 +84,26 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button_dataStore_getData"
+        android:id="@+id/button_sharedPreferences_getData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         android:text="@string/get_value"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_dataStore_searchKey"
-        app:layout_constraintBottom_toTopOf="@id/text_dataStore_foundValue"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout_sharedPreferences_searchKey"
+        app:layout_constraintBottom_toTopOf="@id/text_sharedPreferences_foundValue"
         />
 
     <TextView
-        android:id="@+id/text_dataStore_foundValue"
+        android:id="@+id/text_sharedPreferences_foundValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_dataStore_getData"
+        app:layout_constraintTop_toBottomOf="@id/button_sharedPreferences_getData"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:text="Valor encontrado:"
         />
