@@ -5,6 +5,20 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/characterListFragment">
 
+
+    <fragment
+        android:id="@+id/inputLayout_sharedPreferences_searchKey"
+        android:name="com.durini.solucionlab8y9.ui.fragments.SharedPreferencesFragment"
+        android:label="SharedPreferences"
+        tools:layout="@layout/fragment_shared_preferences"
+        tools:ignore="DuplicateIds">
+        <action
+            android:id="@+id/action_SharedPreferencesFragment_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+    </fragment>
+
+
+
     <fragment
         android:id="@+id/characterListFragment"
         android:name="com.durini.solucionlab8y9.ui.fragments.CharacterListFragment"
@@ -23,4 +37,5 @@
             android:name="id"
             app:argType="integer" />
     </fragment>
+
 </navigation>
