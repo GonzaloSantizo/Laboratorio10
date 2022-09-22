@@ -10,4 +10,13 @@
     <string name="characters">Characters</string>
     <string name="character_detail">Character Detail</string>
     <string name="error_fetching">Error al llamar al API</string>
+
+    <string name="found_value">Valor encontrado: %s</string>
+    <string name="get_value">Obtener</string>
+    <string name="key">Key</string>
+    <string name="save_value">Guardar</string>
+    <string name="value">Value</string>
+    <string name="key_doesnt_exist">No existe</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="datastore">DataStore</string>
 </resources>
