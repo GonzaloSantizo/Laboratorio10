@@ -1,4 +1,4 @@
-package com.durini.solucionlab8y9.ui.activities
+package com.durini.solucionlab8y9.ui.fragments
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.durini.solucionlab8y9.R
 import com.google.android.material.textfield.TextInputLayout
 
-class SharedPreferencesActivity : AppCompatActivity() {
+class SharedPreferencesFragment : AppCompatActivity() {
 
     private lateinit var inputKey: TextInputLayout
     private lateinit var inputValue: TextInputLayout
@@ -20,7 +20,7 @@ class SharedPreferencesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shared_preferences)
+        setContentView(R.layout.fragment_shared_preferences)
 
         inputKey = findViewById(R.id.inputLayout_sharedPreferences_key)
         inputValue = findViewById(R.id.inputLayout_sharedPreferences_value)
